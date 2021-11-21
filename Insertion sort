@@ -1,0 +1,8 @@
+n = int(input())
+mas = list(map(int,input().split()))
+for z in range(n-1):
+    i=z
+    while mas[i]>mas[i+1] and 0 <= i:
+        mas[i],mas[i+1]=mas[i+1],mas[i]
+        i-=1
+print(*mas)
